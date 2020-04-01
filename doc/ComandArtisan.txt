@@ -1,0 +1,4 @@
+1. php artisan -V Версия
+2. php artisan make:model Models/BlogCategory -m создаем папку, модель, мирацию.
+3. php artisan make:model Models/BlogPost -m     создаем папку, модель, мирацию.
+4. php artisan migrate записіваем таблици в Б/Д.
