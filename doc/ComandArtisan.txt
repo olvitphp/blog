@@ -2,3 +2,33 @@
 2. php artisan make:model Models/BlogCategory -m создаем папку, модель, мирацию.
 3. php artisan make:model Models/BlogPost -m     создаем папку, модель, мирацию.
 4. php artisan migrate записіваем таблици в Б/Д.
+
+Урок 6-7
+
+5. php artisan make:seeder UsersTableSeeder
+6. php artisan make:seeder BlogCategoriesTableSeeder
+7. php artisan db:seed
+8. php artisan db:seed --ClassUsersTableSeeder
+9. php artisan migrate:refresh --seed
+10. php artisan make:factory BlogPostFactory
+11. php artisan make:factory UserFactory
+12. composer dump-autoload
+    Решение проблемы с
+    ( Target class [UsersTableSeeder] does not exist.) 1.txt
+     use Illuminate\Support\Str;-без строки не работает
+
+Урок 8 Контроллеры
+
+13. php artisan make:controller RestTestController --resource
+14  php artisan route:list
+
+Урок 9 Контроллеры
+
+15. php artisan make:controller Blog/BaseController
+16. php artisan make:controller Blog/PostController --resource
+
+    Урок 11 Верстка из коробки
+
+17. composer require laravel/ui для 6/7 версии Laravel
+18. php artisan ui vue --auth
+

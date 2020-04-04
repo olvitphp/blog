@@ -1,7 +1,5 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +14,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+// Тестовый
+Route::resource('hello', 'helloController')->names('hello');
+
+// проект blog.post
+Route::group(['namespace' => 'Blog', 'prefix' => 'blog'], function () {
+    Route::resource('posts', 'PostController')->names('blog.posts');
+});
+
+// Авторизация
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

@@ -1,0 +1,126 @@
+
+
+olvit@OLVIT f:\OSPanel\domains\blog
+# php artisan migrate:refresh --seed
+Rolling back: 2020_03_31_124159_create_blog_posts_table
+Rolled back:  2020_03_31_124159_create_blog_posts_table (0.39 seconds)
+Rolling back: 2020_03_31_123707_create_blog_categories_table
+Rolled back:  2020_03_31_123707_create_blog_categories_table (0.37 seconds)
+Rolling back: 2019_08_19_000000_create_failed_jobs_table
+Rolled back:  2019_08_19_000000_create_failed_jobs_table (0.42 seconds)
+Rolling back: 2014_10_12_000000_create_users_table
+Rolled back:  2014_10_12_000000_create_users_table (0.4 seconds)
+Migrating: 2014_10_12_000000_create_users_table
+Migrated:  2014_10_12_000000_create_users_table (0.85 seconds)
+Migrating: 2019_08_19_000000_create_failed_jobs_table
+Migrated:  2019_08_19_000000_create_failed_jobs_table (0.56 seconds)
+Migrating: 2020_03_31_123707_create_blog_categories_table
+Migrated:  2020_03_31_123707_create_blog_categories_table (0.91 seconds)
+Migrating: 2020_03_31_124159_create_blog_posts_table
+Migrated:  2020_03_31_124159_create_blog_posts_table (4.03 seconds)
+
+   Illuminate\Contracts\Container\BindingResolutionException
+
+  Target class [UsersTableSeeder] does not exist.
+
+  at F:\OSPanel\domains\blog\vendor\laravel\framework\src\Illuminate\Container\Container.php:809
+    805|
+    806|         try {
+    807|             $reflector = new ReflectionClass($concrete);
+    808|         } catch (ReflectionException $e) {
+  > 809|             throw new BindingResolutionException("Target class [$concrete] does not exist.", 0, $e);
+    810|         }
+    811|
+    812|         // If the type is not instantiable, the developer is attempting to resolve
+    813|         // an abstract type such as an Interface or Abstract Class and there is
+
+  1   F:\OSPanel\domains\blog\vendor\laravel\framework\src\Illuminate\Container\Container.php:807
+      ReflectionException::("Class UsersTableSeeder does not exist")
+
+  2   F:\OSPanel\domains\blog\vendor\laravel\framework\src\Illuminate\Container\Container.php:807
+      ReflectionClass::__construct("UsersTableSeeder")
+
+olvit@OLVIT f:\OSPanel\domains\blog
+# composer dump-autoload
+Generating optimized autoload files> Illuminate\Foundation\ComposerScripts::postAutoloadDump
+> @php artisan package:discover --ansi
+Discovered Package: barryvdh/laravel-debugbar
+Discovered Package: barryvdh/laravel-ide-helper
+Discovered Package: facade/ignition
+Discovered Package: fideloper/proxy
+Discovered Package: fruitcake/laravel-cors
+Discovered Package: laravel/tinker
+Discovered Package: nesbot/carbon
+Discovered Package: nunomaduro/collision
+Package manifest generated successfully.
+Generated optimized autoload files containing 4956 classes
+
+olvit@OLVIT f:\OSPanel\domains\blog
+# php artisan migrate:refresh --seed
+Rolling back: 2020_03_31_124159_create_blog_posts_table
+Rolled back:  2020_03_31_124159_create_blog_posts_table (0.38 seconds)
+Rolling back: 2020_03_31_123707_create_blog_categories_table
+Rolled back:  2020_03_31_123707_create_blog_categories_table (0.47 seconds)
+Rolling back: 2019_08_19_000000_create_failed_jobs_table
+Rolled back:  2019_08_19_000000_create_failed_jobs_table (0.37 seconds)
+Rolling back: 2014_10_12_000000_create_users_table
+Rolled back:  2014_10_12_000000_create_users_table (0.33 seconds)
+Migrating: 2014_10_12_000000_create_users_table
+Migrated:  2014_10_12_000000_create_users_table (0.83 seconds)
+Migrating: 2019_08_19_000000_create_failed_jobs_table
+Migrated:  2019_08_19_000000_create_failed_jobs_table (0.5 seconds)
+Migrating: 2020_03_31_123707_create_blog_categories_table
+Migrated:  2020_03_31_123707_create_blog_categories_table (0.91 seconds)
+Migrating: 2020_03_31_124159_create_blog_posts_table
+Migrated:  2020_03_31_124159_create_blog_posts_table (3.93 seconds)
+Seeding: UsersTableSeeder
+Seeded:  UsersTableSeeder (0.37 seconds)
+Seeding: BlogCategoriesTableSeeder
+
+   Error
+
+  Class 'str' not found
+
+  at F:\OSPanel\domains\blog\database\seeds\BlogCategoriesTableSeeder.php:21
+    17|
+    18|         $cName = 'Без Категории ';
+    19|         $categories[] = [
+    20|             'title'       => $cName,
+  > 21|             'slug'        => str::slug($cName),
+    22|             'parent_id'   => 0,
+    23|         ];
+    24|         for ($i = 2; $i <= 11; $i++) {
+    25|             $cName = 'Категория #' . $i;
+
+  1   F:\OSPanel\domains\blog\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:32
+      BlogCategoriesTableSeeder::run()
+
+  2   F:\OSPanel\domains\blog\vendor\laravel\framework\src\Illuminate\Container\BoundMethod.php:32
+      call_user_func_array([])
+
+olvit@OLVIT f:\OSPanel\domains\blog
+# php artisan migrate:refresh --seed
+Rolling back: 2020_03_31_124159_create_blog_posts_table
+Rolled back:  2020_03_31_124159_create_blog_posts_table (0.44 seconds)
+Rolling back: 2020_03_31_123707_create_blog_categories_table
+Rolled back:  2020_03_31_123707_create_blog_categories_table (0.34 seconds)
+Rolling back: 2019_08_19_000000_create_failed_jobs_table
+Rolled back:  2019_08_19_000000_create_failed_jobs_table (0.38 seconds)
+Rolling back: 2014_10_12_000000_create_users_table
+Rolled back:  2014_10_12_000000_create_users_table (0.37 seconds)
+Migrating: 2014_10_12_000000_create_users_table
+Migrated:  2014_10_12_000000_create_users_table (0.83 seconds)
+Migrating: 2019_08_19_000000_create_failed_jobs_table
+Migrated:  2019_08_19_000000_create_failed_jobs_table (0.55 seconds)
+Migrating: 2020_03_31_123707_create_blog_categories_table
+Migrated:  2020_03_31_123707_create_blog_categories_table (0.83 seconds)
+Migrating: 2020_03_31_124159_create_blog_posts_table
+Migrated:  2020_03_31_124159_create_blog_posts_table (3.97 seconds)
+Seeding: UsersTableSeeder
+Seeded:  UsersTableSeeder (0.24 seconds)
+Seeding: BlogCategoriesTableSeeder
+Seeded:  BlogCategoriesTableSeeder (0.11 seconds)
+Database seeding completed successfully.
+
+olvit@OLVIT f:\OSPanel\domains\blog
+# composer dump-autoload
