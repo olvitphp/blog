@@ -32,3 +32,10 @@
 17. composer require laravel/ui для 6/7 версии Laravel
 18. php artisan ui vue --auth
 
+    Урок 12 Контролер управления категориями
+19. php artisan make:controller Blog/Admin/CategoryController --resource
+20. php artisan route:list > routes.txt
+
+17 урок последний 05.04.2020
+
+
