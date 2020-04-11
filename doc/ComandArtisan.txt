@@ -35,8 +35,11 @@
     Урок 12 Контролер управления категориями
 19. php artisan make:controller Blog/Admin/CategoryController --resource
 20. php artisan route:list > routes.txt
+    Урок 22-23
 21. php artisan make:request BlogCategoryUpdateRequest
+22. php artisan migrate:refresh --seed
+23. php artisan make:request BlogCategoryCreateRequest
 
-21 урок последний 08.04.2020
+23. Урок последний 09.04.2020
 
 
