@@ -39,7 +39,20 @@
 21. php artisan make:request BlogCategoryUpdateRequest
 22. php artisan migrate:refresh --seed
 23. php artisan make:request BlogCategoryCreateRequest
+    Урок 28
+24. composer require jason-guru/laravel-make-repository --dev
+24. php artisan make:repository CoreRepository
+25. php artisan make:repository BlogCategoryRepository
+    Урок 32
+26. php artisan make:controller Blog\Admin\PostController -r
+27. php artisan make:repository BlogPostRepository
 
-23. Урок последний 09.04.2020
+
+
+
+
+
+
+_31_ Урок последний 11.04.2020
 
 
