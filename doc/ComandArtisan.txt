@@ -46,6 +46,9 @@
     Урок 32
 26. php artisan make:controller Blog\Admin\PostController -r
 27. php artisan make:repository BlogPostRepository
+     Урок 33
+28. composer update обновление версии Laravel 7.3->7.5.2
+29. php artisan make:component AppLayout (работа с блейдовскими шаблонами)
 
 
 
@@ -53,6 +56,6 @@
 
 
 
-_31_ Урок последний 11.04.2020
+_34_ Урок последний 15.04.2020
 
 

@@ -17,6 +17,8 @@ Route::get('/', function () {
 // Тестовый
 Route::resource('hello', 'helloController')->names('hello');
 
+Route::resource('about', 'aboutController')->names('about');
+
 // проект blog.post
 Route::group(['namespace' => 'Blog', 'prefix' => 'blog'], function () {
     Route::resource('posts', 'PostController')->names('blog.posts');
