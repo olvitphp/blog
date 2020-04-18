@@ -49,6 +49,8 @@
      Урок 33
 28. composer update обновление версии Laravel 7.3->7.5.2
 29. php artisan make:component AppLayout (работа с блейдовскими шаблонами)
+    Урок 40
+30. php artisan make:request BlogPostUpdateRequest
 
 
 
@@ -56,6 +58,6 @@
 
 
 
-_38_ Урок последний 15.04.2020
+_39_ Урок последний 17.04.2020
 
 
