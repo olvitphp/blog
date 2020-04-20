@@ -53,11 +53,10 @@
 30. php artisan make:request BlogPostUpdateRequest
 
 
+    Урок 41
+31. php artisan make:observer BlogPostObserver --model=Models\BlogPost
+32. php artisan make:observer BlogCategoryObserver --model=Models\BlogCategory
 
-
-
-
-
-_39_ Урок последний 17.04.2020
+  41  Урок последний 19.04.2020
 
 

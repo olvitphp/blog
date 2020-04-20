@@ -24,6 +24,10 @@ Route::group(['namespace' => 'Blog', 'prefix' => 'blog'], function () {
     Route::resource('posts', 'PostController')->names('blog.posts');
 });
 
+Route::group(['namespace' => 'Blog', 'prefix' => 'blog'], function () {
+    Route::resource('users', 'UserController')->names('blog.users');
+});
+
 // Авторизация
 
 Auth::routes();

@@ -96,7 +96,7 @@
                     <a href="admin/blog/posts">Статьи админка</a>
                     <a href="https://blog.laravel.com">Blog</a>
                     <a href="https://nova.laravel.com">Nova</a>
-                    <a href="https://forge.laravel.com">Forge</a>
+                    <a href="blog/users">Пользователи</a>
                     <a href="hello">Hello</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                 </div>

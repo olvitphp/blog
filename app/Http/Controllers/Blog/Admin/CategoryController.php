@@ -85,10 +85,10 @@ class CategoryController extends BaseController
     {
         $data = $request->input();
 
-        if (empty($data['slug'])) {
-            $data['slug'] = \Str::slug($data['title']);
-           // dd($data);
-        }
+//        if (empty($data['slug'])) {
+//            $data['slug'] = \Str::slug($data['title']);
+//           // dd($data);
+//        }
        // $item = new BlogCategory($data);
        // $item->save();
         $item = (new BlogCategory())->create($data);

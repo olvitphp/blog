@@ -39,6 +39,10 @@
                     <label for="title">Опубликовано</label>
                     <input type="text" value="{{$item->published_at}}" class="form-control" disabled>
                 </div>
+                    <div class="form-group">
+                        <label for="title">Автор</label>
+                        <input type="text" value="{{$item->user_id}}" class="form-control" disabled>
+                    </div>
             </div>
            </div>
         </div>
