@@ -163,10 +163,14 @@ class CategoryController extends BaseController
                 ->withErrors(['msg' => "Запись id=[{$id}] не найдена"])
                 ->withInput();
         }
+
         $data = $request->all();
-      if (empty($data['slug'])) {
-          $data['slug'] = \Str::slug($data['title']);
-      }
+
+//        if (empty($data['slug'])) {
+//          $data['slug'] = \Str::slug($data['title']);
+//      }
+
+
         $result = $item->update($data);
 //            ->fill($data)
 //            ->save();
